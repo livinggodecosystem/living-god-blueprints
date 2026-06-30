@@ -40,3 +40,54 @@ The Version 1 token contract shall:
 
 The Version 1 token contract shall NOT include staking, DeFi, governance logic, buyback mechanisms, or transaction taxes.
 
+## Supply Model
+
+Maximum Supply
+
+15,000,000 LGC
+
+The total supply shall be created during deployment.
+
+No additional tokens shall ever be minted after deployment.
+
+Tokens allocated for future ecosystem initiatives shall be held in designated treasury or vesting contracts until released according to governance and vesting rules.
+
+The contract shall NOT:
+
+• Mint additional tokens.
+
+• Charge transfer fees.
+
+• Charge transaction taxes.
+
+• Automatically burn tokens.
+
+• Include staking logic.
+
+• Include governance voting.
+
+• Store treasury logic.
+
+• Store vesting logic.
+
+• Depend on centralized services.
+
+Security Requirements
+
+The implementation shall:
+
+• Use OpenZeppelin ERC20.
+
+• Follow Checks-Effects-Interactions.
+
+• Avoid unnecessary external calls.
+
+• Use Solidity 0.8.x overflow protections.
+
+• Compile without warnings.
+
+• Pass static analysis.
+
+• Pass unit tests.
+
+• Undergo independent audit before Mainnet.
